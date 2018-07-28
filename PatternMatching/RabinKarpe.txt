@@ -1,0 +1,22 @@
+Rabin Karpe
+p = 90210	m = 5
+t = 48902107
+if base is 10
+hashcode for pattern: 9*10^(5-0-1) + 0*10^3 + 2*10^2 + 1*10*1 + 0*10^0
+"string of digits converted to int"
+
+h(p) = 90210
+h(t) = 48902 no match so shift to new new = 89021
+
+old - 4*10^(5-0-1) = 8902
+8902*10 = 89020
+89020+1 = 89021
+repeat
+
+"Rolling Hash" shift with O(n)
+Issues with overflow - don't worry about this
+
+11368
+25618
+39545
+43838
